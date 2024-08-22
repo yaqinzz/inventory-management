@@ -5,7 +5,7 @@ import { CardPopularProducts } from './CardPopularProducts'
 import CardPurchaseSummary from './CardPurchaseSummary'
 import CardSalesSummary from './CardSalesSummary'
 
-export const Dashboard = () => {
+const Dashboard = () => {
 	return (
 		<div className='grid grid-col-1 md:grid-cols-2 xl:grid-col-3 xl:overflow-auto gap-10 pb-4 custom-grid-rows'>
 			<CardPopularProducts />
@@ -18,3 +18,5 @@ export const Dashboard = () => {
 		</div>
 	)
 }
+
+export default Dashboard
