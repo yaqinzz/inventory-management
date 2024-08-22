@@ -3,10 +3,7 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"seed": "ts-node prisma/seed.ts",
-		"build": "rimraf dist && tsc && prisma generate",
-		"start": "npm run build && node dist/src/index.js"
+		"start": "nodemon src/index.ts"
 	},
 	"keywords": [],
 	"author": "",
