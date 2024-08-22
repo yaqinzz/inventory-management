@@ -27,7 +27,7 @@ app.use('/products', productRoutes)
 app.use('/users', userRouters)
 app.use('/expenses', expenseRoutes)
 app.get('/', (req, res) => {
-	res.send('Server is up and running!')
+	res.status(200).json({ message: 'Server is up and running!' })
 })
 // SERVER
 
