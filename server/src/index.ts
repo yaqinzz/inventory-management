@@ -26,6 +26,9 @@ app.use('/dashboard', dasboardRoutes)
 app.use('/products', productRoutes)
 app.use('/users', userRouters)
 app.use('/expenses', expenseRoutes)
+app.get('/', (req, res) => {
+	res.send('Server is up and running!')
+})
 // SERVER
 
 const port = process.env.PORT || 3001
