@@ -6,6 +6,9 @@ import helmet from 'helmet'
 import morgan from 'morgan'
 // ROUTE IMPORTS
 import dasboardRoutes from './routes/dashboardRoutes'
+import userRouters from './routes/userRoutes'
+import productRoutes from './routes/productRoutes'
+import expenseRoutes from './routes/expenseRoutes'
 
 // CONFIGURATIONS
 dotenv.config()
@@ -20,6 +23,9 @@ app.use(cors())
 
 // ROUTES
 app.use('/dashboard', dasboardRoutes)
+app.use('/products', productRoutes)
+app.use('/users', userRouters)
+app.use('/expenses', expenseRoutes)
 // SERVER
 
 const port = process.env.PORT || 3001
